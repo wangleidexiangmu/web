@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('info', function () {
+    phpinfo();
+});
+Route::get('add','WebController@add');
+Route::get('mon','WebController@mon');
